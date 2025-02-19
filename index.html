@@ -1,158 +1,191 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-ES">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GTSpotters</title>
+
+    <!-- Meta tags para SEO -->
+    <meta name="description"
+        content="GTSpotters - La comunidad más grande de carspotting en España. Descubre y comparte los mejores coches de tu ciudad, participa en eventos y gana premios exclusivos.">
+    <meta name="keywords"
+        content="carspotting, coches exclusivos, comunidad automotriz, spotting cars, GTSpotters, eventos automóviles, fotografía automóviles">
+    <meta name="author" content="GTSpotters">
+
+    <!-- Open Graph meta tags -->
+    <meta property="og:title" content="GTSpotters - Comunidad de Carspotting">
+    <meta property="og:description"
+        content="Únete a la comunidad más grande de entusiastas automotrices. Comparte tus mejores spots y conecta con otros apasionados.">
+    <meta property="og:image" content="logo-rojo.png">
+    <meta property="og:url" content="https://gtspotters.com">
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MobileApplication",
+      "name": "GTSpotters",
+      "applicationCategory": "LifestyleApplication",
+      "operatingSystem": ["iOS", "Android"],
+      "description": "Aplicación de carspotting para descubrir y compartir los mejores coches de tu ciudad",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR"
+      }
+    }
+    </script>
+
     <!-- Swiper.js CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
-    <header class="logo-header">
-        <img src="logo-rojo.png" alt="GTSpotters Logo" class="logo">
-    </header>
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>GTSpotters</h1>
-                    <p>Descubre y comparte los mejores coches de tu ciudad. Únete a la que será la comunidad más grande
-                        de entusiastas automotrices.</p>
-                    <p>Carspotting, eventos, premios y mucho más.</p>
-                    <div class="download-buttons">
-                        <a href="#" class="store-button">
-                            <svg class="store-icon" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08M12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.32 2.33-1.94 4.23-3.74 4.25">
-                                </path>
-                            </svg>
-                            App Store
-                        </a>
-                        <a href="#" class="store-button">
-                            <svg class="store-icon" viewBox="0 0 24 24">
-                                <path fill="currentColor"
-                                    d="M3.609 1.814L13.792 12l-10.183 10.186L3.61 12zm16.782 0L16.61 5.594l-3.781 3.781L20.391 12l-7.562 7.625 3.781 3.781 3.782-3.78 2.093-2.094L20.391 12z">
-                                </path>
-                            </svg>
-                            Google Play
-                        </a>
+    <main>
+        <header class="logo-header">
+            <img src="logo-rojo.png" alt="GTSpotters - Comunidad de carspotting" class="logo">
+        </header>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1>GTSpotters</h1>
+                        <p>Descubre y comparte los mejores coches de tu ciudad. Únete a la que será la comunidad más
+                            grande
+                            de entusiastas automotrices.</p>
+                        <p>Carspotting, eventos, premios y mucho más.</p>
+                        <div class="download-buttons">
+                            <a href="#" class="store-button">
+                                <svg class="store-icon" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.53 4.08M12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.32 2.33-1.94 4.23-3.74 4.25">
+                                    </path>
+                                </svg>
+                                App Store
+                            </a>
+                            <a href="#" class="store-button">
+                                <svg class="store-icon" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M3.609 1.814L13.792 12l-10.183 10.186L3.61 12zm16.782 0L16.61 5.594l-3.781 3.781L20.391 12l-7.562 7.625 3.781 3.781 3.782-3.78 2.093-2.094L20.391 12z">
+                                    </path>
+                                </svg>
+                                Google Play
+                            </a>
+                        </div>
+                    </div>
+                    <div class="phone">
+                        <div class="dynamic-island"></div>
+                        <div class="screen">
+                            <img src="screens/1.PNG" alt="App Preview" class="app-preview active">
+                            <img src="screens/2.PNG" alt="App Preview" class="app-preview active">
+                            <img src="screens/3.PNG" alt="App Preview" class="app-preview active">
+                            <img src="screens/4.PNG" alt="App Preview" class="app-preview active">
+                            <img src="screens/5.PNG" alt="App Preview" class="app-preview active">
+
+                        </div>
                     </div>
                 </div>
-                <div class="phone">
-                    <div class="dynamic-island"></div>
-                    <div class="screen">
-                        <img src="screens/1.PNG" alt="App Preview" class="app-preview active">
-                        <img src="screens/2.PNG" alt="App Preview" class="app-preview active">
-                        <img src="screens/3.PNG" alt="App Preview" class="app-preview active">
-                        <img src="screens/4.PNG" alt="App Preview" class="app-preview active">
-                        <img src="screens/5.PNG" alt="App Preview" class="app-preview active">
+            </div>
+        </section>
 
+        <section id="features">
+            <div class="container">
+                <h2>Características</h2>
+                <div class="features">
+                    <div class="feature-card">
+                        <i class="fas fa-camera fa-3x"></i> <!-- Icono de cámara -->
+                        <h3>Captura</h3>
+                        <p>Fotografía y colecciona tus mejores avistamientos</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-users fa-3x"></i> <!-- Icono de comunidad -->
+                        <h3>Comunidad</h3>
+                        <p>Conecta con otros entusiastas del mundo del motor</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-map-marker-alt fa-3x"></i> <!-- Icono de ubicación -->
+                        <h3>Ubicación</h3>
+                        <p>Descubre spots increíbles cerca de ti</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-trophy fa-3x"></i> <!-- Icono de premio -->
+                        <h3>Premios</h3>
+                        <p>Obtén medallas y premios exclusivos al encontrate con coches únicos</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="features">
-        <div class="container">
-            <h2>Características</h2>
-            <div class="features">
-                <div class="feature-card">
-                    <i class="fas fa-camera fa-3x"></i> <!-- Icono de cámara -->
-                    <h3>Captura</h3>
-                    <p>Fotografía y colecciona tus mejores avistamientos</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-users fa-3x"></i> <!-- Icono de comunidad -->
-                    <h3>Comunidad</h3>
-                    <p>Conecta con otros entusiastas del mundo del motor</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-map-marker-alt fa-3x"></i> <!-- Icono de ubicación -->
-                    <h3>Ubicación</h3>
-                    <p>Descubre spots increíbles cerca de ti</p>
-                </div>
-                <div class="feature-card">
-                    <i class="fas fa-trophy fa-3x"></i> <!-- Icono de premio -->
-                    <h3>Premios</h3>
-                    <p>Obtén medallas y premios exclusivos al encontrate con coches únicos</p>
+        <section id="about">
+            <div class="container">
+                <h2>Quiénes Somos</h2>
+                <div class="team">
+                    <div class="team-member">
+                        <div class="team-photo"></div>
+                        <h3>Óscar Anadón O.</h3>
+                        <p>Co-Founder</p>
+                    </div>
+                    <div class="team-member">
+                        <div class="team-photo"></div>
+                        <h3>Sergio Hernández</h3>
+                        <p>Co-Founder</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section id="gallery">
+            <div class="container">
+                <h2>Algunos de nuestros spots...</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
 
-    <section id="about">
-        <div class="container">
-            <h2>Quiénes Somos</h2>
-            <div class="team">
-                <div class="team-member">
-                    <div class="team-photo"></div>
-                    <h3>Óscar Anadón O.</h3>
-                    <p>Co-Founder</p>
-                </div>
-                <div class="team-member">
-                    <div class="team-photo"></div>
-                    <h3>Sergio Hernández</h3>
-                    <p>Co-Founder</p>
+                        <div class="swiper-slide"><img src="spots/bugatti.jpg"
+                                alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/286597126_1177875513006180_1320352287390976024_n.jpg"
+                                alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/287122357_154147993835521_3449127744807471816_n.jpg"
+                                alt="coche"></div>
+
+                        <div class="swiper-slide"><img src="spots/336079561_743761407330049_196497685019393694_n.jpg"
+                                alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/336294291_736779051145630_6081021575669047085_n.jpg"
+                                alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/363827591_305637571955831_8870792997686859736_n.jpg"
+                                alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/447748183_1656838131521822_4918454130024124477_n.jpg"
+                                alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/467941901_1550729492473473_1672652056447524665_n.jpg"
+                                alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/469915764_520950800404767_418442627583920106_n.jpg"
+                                alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/IMG_2052.heic" alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/IMG_2058.heic" alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/IMG_3148.HEIC" alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/IMG_5640.HEIC" alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/1.HEIC" alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/IMG_7840.heic" alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/IMG_8086.HEIC" alt="coche"></div>
+                        <div class="swiper-slide"><img src="spots/287438008_5525204597510349_5010757525098297497_n.jpg"
+                                alt="coche"></div>
+
+                    </div>
+                    <!-- Botones de navegación -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <!-- Paginación -->
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section id="gallery">
-        <div class="container">
-            <h2>Algunos de nuestros spots...</h2>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-
-                    <div class="swiper-slide"><img src="spots/53067105_948800668651469_9008882373461754763_n.jpg"
-                            alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/286597126_1177875513006180_1320352287390976024_n.jpg"
-                            alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/287122357_154147993835521_3449127744807471816_n.jpg"
-                            alt="coche"></div>
-
-                    <div class="swiper-slide"><img src="spots/336079561_743761407330049_196497685019393694_n.jpg"
-                            alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/336294291_736779051145630_6081021575669047085_n.jpg"
-                            alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/363827591_305637571955831_8870792997686859736_n.jpg"
-                            alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/447748183_1656838131521822_4918454130024124477_n.jpg"
-                            alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/467941901_1550729492473473_1672652056447524665_n.jpg"
-                            alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/469915764_520950800404767_418442627583920106_n.jpg"
-                            alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/IMG_2052.heic" alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/IMG_2058.heic" alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/IMG_3148.HEIC" alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/IMG_5640.HEIC" alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/1.HEIC" alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/IMG_7840.heic" alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/IMG_8086.HEIC" alt="coche"></div>
-                    <div class="swiper-slide"><img src="spots/287438008_5525204597510349_5010757525098297497_n.jpg"
-                            alt="coche"></div>
-
-                </div>
-                <!-- Botones de navegación -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <!-- Paginación -->
-                <div class="swiper-pagination"></div>
+            <!-- Lightbox para pantalla completa -->
+            <div class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-img" src="">
             </div>
-        </div>
-        <!-- Lightbox para pantalla completa -->
-        <div class="lightbox">
-            <span class="close">&times;</span>
-            <img class="lightbox-img" src="">
-        </div>
-    </section>
-
+        </section>
+    </main>
 
     <footer>
         <div class="container">
@@ -186,11 +219,11 @@
                 </div>
             </div>
             <div class="footer-bottom">
-    <p>® 2025 GTSpotters. Todos los derechos reservados. 
-        <a href="terms.html">Términos y condiciones</a>
-		<a href="easi.html">EASI</a>
-    </p>
-</div>
+                <p>® 2025 GTSpotters. Todos los derechos reservados.
+                    <a href="terms.html">Términos y condiciones</a>
+                    <a href="easi.html">EASI</a>
+                </p>
+            </div>
         </div>
     </footer>
 
